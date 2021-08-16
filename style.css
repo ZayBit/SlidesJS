@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.controls {
+  position: fixed;
+  right: 30px;
+  top: 40%;
+  z-index: 1;
+}
+.controls ul li {
+  display: block;
+  list-style: none;
+  margin: 10px 0px;
+}
+.controls ul li button {
+  cursor: pointer;
+  padding: 7px;
+  background: none;
+  border-radius: 100%;
+  outline: none;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+.controls ul li button:hover::after {
+  left: 0px;
+}
+.controls ul li button::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  top: 0px;
+  right: 0px;
+  background: #fff;
+  transition: all 300ms ease;
+}
+.controls ul li button.current-button::after {
+  left: 0%;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.vt-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.vt-section.wolf-vertical h1 {
+  color: #241f1f;
+}
+.vt-section .row-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.vt-section .row-content .separator {
+  width: 50%;
+}
+.vt-section.first-item {
+  background-color: #77ce3e;
+  text-align: center;
+}
+.vt-section.first-item h1 {
+  margin-top: 3em;
+  display: inline-block;
+  font-size: 7em;
+  color: #fff;
+}
+.vt-section.first-item p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+}
+.vt-section.first-item ul li {
+  list-style: none;
+  display: inline-block;
+}
+.vt-section.first-item ul li a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.vt-section.second-item {
+  background-color: #3d69e4;
+}
+.vt-section.third-item {
+  background-color: #d3bc54;
+}
+.vt-section.fourth-item {
+  background-color: #241f1f;
+}
+
+.slideshow-container .slideshow {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.slideshow-container .slideshow .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.slideshow-container .slideshow .slide h1 {
+  font-size: 5em;
+  color: #3d69e4;
+  transition: all 4s ease;
+}
+.slideshow-container .slideshow .slide.horizon-horizontal h1 {
+  color: #fff;
+}
+.slideshow-container .slideshow-controls button {
+  position: absolute;
+  bottom: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0px 15px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1em;
+  border-radius: 20px;
+}
+.slideshow-container .slideshow-controls button.prev-slide {
+  left: 60px;
+}
+.slideshow-container .slideshow-controls button.next-slide {
+  right: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
